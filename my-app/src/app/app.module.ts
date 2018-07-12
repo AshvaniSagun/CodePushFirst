@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { APIComponent } from './component/API/API.component';
 import { homeComponent } from './component/layout/home/home.component';
 import { NavMenuComponent } from './component/nav-menue/navmenu.component';
+import { NotFoundComponent } from './component/not-found/not-found.component';
 @NgModule({
   declarations: [
-    AppComponent,APIComponent,homeComponent,NavMenuComponent
+    AppComponent,APIComponent,homeComponent,NavMenuComponent,NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -17,7 +18,8 @@ import { NavMenuComponent } from './component/nav-menue/navmenu.component';
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: homeComponent},     
-      { path: 'API',component: APIComponent}      
+      { path: 'API',component: APIComponent},
+      { path: '**', component: NotFoundComponent }      
   ])
   ],
   providers: [],
