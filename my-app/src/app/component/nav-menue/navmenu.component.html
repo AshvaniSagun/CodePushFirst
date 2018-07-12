@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+        <mat-toolbar-row>     
+          <span class="example-spacer"></span>    
+          <button  [routerLinkActive]="['link-active']" [routerLink]="['/home']" mat-button>HOME</button>
+          <button  [routerLinkActive]="['link-active']" [routerLink]="['/API']" mat-button>API-POC</button>
+          <div class="col-sm-12 col-xs-12 header-section">
+            <div class="logo-container">
+                <img src="content/images/Avengers.png" class="img-responsive" style="margin-left: 334px;width: 65px;margin-top: 10px;" alt="Logo" />  
+                <button mat-button [matMenuTriggerFor]="menu"style="position:absolute;right:50px;width:44px;top: 17px;"><h1 style="margin-top: 11px;">Login</h1></button>
+                <mat-menu #menu="matMenu">
+                  <button mat-menu-item>Google</button>
+                  <button mat-menu-item>Facebook</button>
+                </mat-menu>
+            </div>
+        </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    

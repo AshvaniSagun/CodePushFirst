@@ -1,23 +1,10 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row>     
-      <span class="example-spacer"></span>    
-      <button mat-button><h3>ASHVANI</h3></button>
-      <button mat-button>API-POC</button>
-      <button mat-button>Contact</button>
-      <div class="col-sm-12 col-xs-12 header-section">
-        <div class="logo-container">
-            <img src="content/images/Avengers.png" class="img-responsive" style="margin-left: 334px;width: 65px;margin-top: 10px;" alt="Logo" />
-            <!-- <img src="content/images/1.png" *ngIf="!authenticated" (click)="logIn()" class="img-responsive btn" /> -->
-            <button mat-button [matMenuTriggerFor]="menu"style="position:absolute;right:50px;width:44px;top: 17px;"><h1 style="margin-top: 11px;">Login</h1></button>
-            <mat-menu #menu="matMenu">
-              <button mat-menu-item>Google</button>
-              <button mat-menu-item>Facebook</button>
-            </mat-menu>
+<div class='container-fluid'>   
+    <div class="wrapper main-wrapper">
+        <div class="row mainTabs">
+            <nav-menu></nav-menu>
+            <div class="tab-content mainTabs-content main-sectioncontainer">
+                <router-outlet></router-outlet>
+            </div>
         </div>
     </div>
-    </mat-toolbar-row>
-  </mat-toolbar>
-  
-  <img src="content/images/wall.jpg" class="img-responsive"Style="width:1333px;"/>
-
- 
+</div>
