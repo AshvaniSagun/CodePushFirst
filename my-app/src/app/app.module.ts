@@ -5,7 +5,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material.module';
 import { AppComponent } from './app.component';
 import { APIComponent } from './component/API/API.component';
-import { homeComponent } from './component/layout/home/home.component';
+import { homeComponent } from './component/home/home.component';
 import { NavMenuComponent } from './component/nav-menue/navmenu.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
 @NgModule({
