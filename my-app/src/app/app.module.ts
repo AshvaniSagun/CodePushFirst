@@ -8,13 +8,14 @@ import { APIComponent } from './component/API/API.component';
 import { homeComponent } from './component/home/home.component';
 import { NavMenuComponent } from './component/nav-menue/navmenu.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
+import {ButtonModule} from 'primeng/button';
 @NgModule({
   declarations: [
     AppComponent,APIComponent,homeComponent,NavMenuComponent,NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,MaterialModule,
+    BrowserAnimationsModule,MaterialModule,ButtonModule,
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: homeComponent},     
